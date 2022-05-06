@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.5/css/bootstrap-dialog.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.5/js/bootstrap-dialog.min.js"></script>
+<script src="https://cdn.tiny.cloud/1/0l87gznitggkzr4ul63ybwkjmot6t4ik2851ervjs915bk7i/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script>tinymce.init({selector:'textarea'});</script>
+</head>
+<body style="padding:10px">
+<h2>BootstrapDialog Mockup</h2>
+<hr/>
+
+<div class="row" style="border:1px dashed black;margin:10px;padding:5px;border-radius:5px">
+	<div class="col-md-12">
+	
+		<label for="dialogTitle">Dialog Title</label>
+		<input id="dialogTitle" class="form-control" type="text"/>
+		
+		<label for="dialogText">Dialog Text</label>
+		<textarea id="dialogText" rows="10" class="form-control" type="text"></textarea>
+		
+		<br/>
+		<div class="row">
+			<div class="col-md-2">
+				<label for="dialogType">Dialog Type</label>
+				<br/>
+				<select name="dialogType" id="dialogType">
+				  <option value="TYPE_PRIMARY">TYPE_PRIMARY</option>
+				  <option value="TYPE_DEFAULT">TYPE_DEFAULT</option>
+				  <option value="TYPE_INFO">TYPE_INFO</option>
+				  <option value="TYPE_SUCCESS">TYPE_SUCCESS</option>
+				  <option value="TYPE_WARNING">TYPE_WARNING</option>
+				  <option value="TYPE_DANGER">TYPE_DANGER</option>
+				</select>
+				<br/>
+				<label for="modalWidth">Modal Width</label><br/>
+				<input class="form-control" id="modalWidth" value="40" />
+			</div>
+			<div class="col-md-2">
+			  <label>Button Visibility</label><br/>
+			  <input type="radio" id="showActionButton" name="fav_language" value="HTML">
+			  <label for="html">Show Action Button</label><br>
+			  <input type="radio" id="hideActionButton" name="fav_language" value="CSS">
+			  <label for="css">Hide Action Button</label><br>
+			</div>
+			<div class="col-md-2">
+				<label for="saveButtonText" style="display:none">Action Button Text</label><br>
+				<input style="form-control;display:none" id="saveButtonText" type="text" />
+			</div>
+			<div class="col-md-2 actionClass" style="display:none">
+				<label>Button Class</label><br/>
+			  <input type="radio" id="primaryButtonClass" name="fav_language1"  value="btn btn-primary">
+			  <label for="html1">Primary(Blue)</label><br>
+			  <input type="radio" id="successButtonClass" name="fav_language1" value="btn btn-success">
+			  <label for="css2">Success(Green)</label><br>
+			  <input type="radio" style="margin-left:8px" name="fav_language1" id="dangerButtonClass" value="btn btn-danger">
+			  <label for="css33">Danger(Red)</label><br>
+				
+			</div>
+		</div>
+		 
+		
+		<hr/>
+		
+		<button id="visualize" class="btn btn-primary">Visualize Dialog</button>
+	</div>
+</div>
+
+
+
+
+<script src="./index.js"></script>
+</body>
+</html>
